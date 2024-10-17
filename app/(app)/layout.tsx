@@ -1,10 +1,10 @@
-import { Header } from '@/components/header'
+import { Header } from "@/components/header";
 
 export default function AppLayout({ children }: React.PropsWithChildren) {
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex h-full flex-col">
       <Header />
-      {children}
+      <main>{children}</main>
     </div>
-  )
+  );
 }
